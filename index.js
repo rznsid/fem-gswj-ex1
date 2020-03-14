@@ -1,6 +1,15 @@
-// TODO: define addFavoriteBook(..) function
+function addFavoriteBook(bookName) {
+    if (!bookName.toLowerCase().includes("great")) {
+        favoriteBooks.push(bookName);
+    }
+}
 
-// TODO: define printFavoriteBooks() function
+function printFavoriteBooks(books) {
+    console.log(`Favorite Books: ${books.length}`)
+    for (let book of books) {
+        console.log(book);
+    }
+}
 
 var favoriteBooks = [];
 
@@ -10,4 +19,4 @@ addFavoriteBook("Crime & Punishment");
 addFavoriteBook("Great Expectations");
 addFavoriteBook("You Don't Know JS");
 
-// TODO: print out favorite books
+printFavoriteBooks(favoriteBooks);
